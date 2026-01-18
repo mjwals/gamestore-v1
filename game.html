@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/all.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/849cbce7c6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <a href="index.html" title="Home">
+                <span class="logo">game<strong>store</strong></span>
+            </a>
+            <div class="darkmode-buttons">
+                <button class="button left disable-dark-mode active" title="Light Theme"><i class="fas fa-sun"></i></button>
+                <button class="button right enable-dark-mode" title="Dark Theme"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="banner"></div>
+    </header>
+    <section class="wrapper">
+        <div class="product-desc">
+            <p class="product-desc__name"></p>
+            <div class="product-desc__category-icon"></div>
+            <span class="product-desc__category"></span>
+            <div class="product-desc__card">
+                <div class="product-desc__price">
+                    From&nbsp;<figure></figure>&nbsp;/ month
+                </div>
+                <button class="product-desc__button" title="Add To Basket">Add To Basket</button>
+            </div>
+        </div>
+    </section>
+    <section class="wrapper game-details">
+        <section class="left-section">
+            <div class="title">
+                <div class="title__text">Description</div>
+            </div>
+            <div class="summary"></div>
+        </section>
+        <section class="right-section">
+            <div class="title">
+                <div class="title__text">Details</div>
+            </div>
+            <ul class="details">
+                <li>
+                    <label class="details__label">Release Date: </label>
+                    <div class="details__content">
+                        <p class="release-date"></p>
+                    </div>
+                </li>
+                <li>
+                    <label class="details__label">Developer: </label>
+                    <div class="details__content">
+                        <p class="developer"></p>
+                    </div>
+                </li>
+                <li>
+                    <label class="details__label">Pegi Rating: </label>
+                    <div class="details__content">
+                        <div class="ratings"></div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </section>
+
+    <script src="js/functions.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+/*****************************************************************************************************************
+    LG
+*****************************************************************************************************************/
+
+$font-400: 1.2rem;
+$font-500: 1.6rem; /*base*/
+$font-600: 1.8rem;
+$font-700: 2rem;
+$font-800: 2.6rem;
+$font-900: 6.4rem;
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    /*****************************************************************************************************************
+        Index Page
+    *****************************************************************************************************************/
+
+    body {
+        font-size: $font-500;
+    }
+
+    nav {
+        .wrapper {
+            padding: 0 4rem;
+        }
+    }
+
+    aside {
+        display: none;
+    }
+
+    .search {
+        margin: 0 2rem 3.5rem 2rem;
+    }
+
+    .store-search {
+        font-size: $font-600;
+        font-weight: $font-semi-bold;
+    }
+
+    .grid-filters__results-total {
+        font-size: $font-600;
+        font-weight: $font-semi-bold;
+    }
+
+    .tags {
+        &__tag {
+            font-size: $font-400;
+            font-weight: $font-bold;
+        }
+    }
+
+    .grid {
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 72rem;
+        
+        display: flex;
+        justify-content: flex-start;
+    
+        &__item {
+            flex: 0 0 32rem;
+            margin: 4rem 2rem 0 2rem;
+        }
+    }
+
+    .card {
+        &__img-wrapper {
+            height: 22rem;
+        }
+
+        &__desc {
+            font-weight: $font-semi-bold;
+        }
+    
+        &__meta-data {
+            font-size: $font-400;
+        }
+    
+        &__price {
+            font-size: $font-400;
+            
+            figure {
+                font-size: $font-700;
+                font-weight: $font-bold;
+            }
+        }
+    }
+
+    .no-search-results {
+        p {
+            i {
+                font-size: $font-900;
+            }
+        }
+    
+        h1 {
+            font-size: $font-700;
+        }
+    
+        h4 {
+            font-size: $font-600;
+            font-weight: $font-normal;
+        }
+    }
+
+    /*****************************************************************************************************************
+        Product Page
+    *****************************************************************************************************************/
+
+    .banner {
+        height: 65.5rem;
+        background-position: center;
+
+        &:after {
+            top: 40%;
+        }
+    }
+
+    .left-section {
+        flex: 1;
+        margin-right: 4rem;
+        padding: 0 0 4rem 4rem;
+    }
+    
+    .right-section {
+        flex: 0 0 40%;
+        padding: 0 4rem 4rem 0;
+    }
+
+    .product-desc {
+        padding: 3.2rem 4rem 3.4rem 4rem;
+
+        &__name,
+        &__price figure {
+            font-size: $font-800;
+            font-weight: $font-bold;
+        }
+
+        &__card {
+            position: absolute;
+            top: -3.3rem;
+            right: 4rem;
+            width: calc(40% - 4rem);
+            text-align: center;
+        }
+
+        &__button {
+            font-weight: $font-bold;
+        }
+    }
+
+    .title {
+        &__text {
+            font-size: $font-500;
+            font-weight: $font-semi-bold;
+        }
+    }
+
+    .summary {
+        line-height: 2.8rem;
+    }
+
+    .details {
+        li {
+            margin-bottom: .9rem;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &__label {
+            width: 11.7rem;
+        }
+    }
+
+    .ratings {
+        display: flex;
+        flex-direction: column;
+    
+        &__rating {
+            width: 6rem;
+            height: 6rem;
+            margin: .5rem .5rem .5rem 0;
+        }
+    }
+}

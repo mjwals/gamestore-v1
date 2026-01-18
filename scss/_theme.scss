@@ -1,0 +1,242 @@
+/*****************************************************************************************************************
+    Theme
+*****************************************************************************************************************/
+
+$black: #262626;
+$white: #FFFFFF;
+
+$primary: #4447A8;
+$danger: #D83117;
+
+$gray-100: #E8E8E8;
+$gray-200: #D3D4D4;
+$gray-300: #BFC0C0;
+$gray-400: #636464;
+
+/*****************************************************************************************************************
+    Theme - Index
+*****************************************************************************************************************/
+
+body {
+    background: $gray-100;
+    color: $black;
+}
+
+nav {
+    background: $white;
+    box-shadow: 0 .1rem .6rem rgba(0, 0, 0, .25);
+    
+    a {
+        color: $black;
+    }
+}
+
+.button {
+    border-color: $primary;
+    background: transparent;
+    color: $primary;
+
+    &.active {
+        background: $primary;
+        border-color: $primary;
+        color: $white;
+    }
+}
+
+aside {
+    border-color: $gray-200;
+}
+
+.categories {
+    li {
+        .checkbox-container {        
+            &:hover {
+                background: $gray-200;
+
+                .checkbox {
+                    background: $primary;
+                }
+
+                .checkbox-label {
+                    color: $black;
+                }
+
+                input {
+                    &:checked ~ .checkbox {
+                        background: $primary;
+                    }
+                }
+            }
+        
+            input {
+                &:checked ~ .checkbox {
+                    background: $primary;
+                }
+            }
+        
+            .checkbox {
+                background-color: $white;
+        
+                &:after {
+                    border-color: $white;
+                }
+            }
+
+            .checkbox-label {
+                color: $gray-400;
+            }
+        }
+    }
+}
+
+.store-search {
+    background: $white;
+    border-color: $white;
+    color: $gray-200;
+
+    &:focus {
+        border-color: $primary;
+        color: $black;
+    }
+
+    &::-webkit-input-placeholder,
+    &::placeholder {
+        color: $gray-200;
+    }
+}
+
+.search-controls {
+    &__icon i {
+        color: $gray-200;
+    }
+
+    &__btn-clear {
+        color: $gray-400;
+
+        &:hover {
+            color: $danger;
+        }
+    }
+}
+
+.tags {
+    &__tag {
+        background: $gray-400;
+        color: $white;
+
+        &:hover {
+            background: $danger;
+        }
+    }
+}
+
+.line {
+    background: $gray-200;
+}
+
+.card {
+    &__img-wrapper {
+        background: $gray-200;
+
+        .card__controls {
+            background: rgba($gray-200, .94);
+
+            &__button {
+                background: $gray-400;
+                color: $white;
+
+                &:hover {
+                    background: $primary;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    &__desc {
+        color: $black;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    &__meta-data {
+        color: $gray-400;
+
+        a {
+            color: inherit;
+        }
+    }
+
+    &__price {
+        color: $primary;
+
+        a {
+            color: inherit;
+        }
+    }
+}
+
+.no-search-results {
+    h4 {
+        color: $gray-400;
+
+        strong {
+            color: $primary;
+        }
+    }
+}
+
+/*****************************************************************************************************************
+    Theme - Product Page
+*****************************************************************************************************************/
+
+.banner {
+    &:after {
+        background: linear-gradient(transparent, rgba(38, 38, 38, 1));
+    }
+}
+
+.product-desc {
+    &__category {
+        color: $gray-400;
+    }
+
+    &__category-icon {
+        fill: $gray-400;
+    }
+    
+    &__card {
+        background: $white;
+        box-shadow: 0 .1rem .6rem rgba(0, 0, 0, .25);
+    }
+
+    &__price {
+        color: $primary;
+    }
+
+    &__button {
+        background: $gray-400;
+        color: $white;
+
+        &:hover {
+            background: $primary;
+        }
+    }
+}
+
+.title {
+    border-color: $gray-200;
+
+    &__text {
+        color: $black;
+        border-color: $black;
+    }
+}
+
+.details {
+    &__label {
+        color: $gray-400;
+    }
+}

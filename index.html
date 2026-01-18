@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamestore</title>
+    <link href="css/all.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/849cbce7c6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="wrapper">
+        <a href="index.html" title="Home">
+          <span class="logo">game<strong>store</strong></span>
+        </a>
+        <div class="darkmode-buttons">
+          <button
+            class="button left disable-dark-mode active"
+            title="Light Theme"
+          >
+            <i class="fas fa-sun"></i>
+          </button>
+          <button class="button right enable-dark-mode" title="Dark Theme">
+            <i class="fas fa-moon"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
+    <section class="wrapper index">
+      <aside>
+        <ul class="categories"></ul>
+      </aside>
+      <main>
+        <section class="search">
+          <div class="search__container">
+            <input type="text" class="store-search" placeholder="Search" />
+            <div class="search-controls">
+              <span class="search-controls__icon"
+                ><i class="fas fa-search"></i
+              ></span>
+              <button
+                class="search-controls__btn-clear hide"
+                title="Clear Search"
+              >
+                <i class="fas fa-times-circle"></i>
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="stores">
+          <section class="grid-filters">
+            <span class="grid-filters__results-total">All 5 Stores</span>
+          </section>
+          <div class="line"></div>
+          <section class="filter-tags">
+            <ul class="tags-container"></ul>
+          </section>
+          <section class="grid-container">
+            <ul class="grid"></ul>
+          </section>
+          <div class="no-search-results"></div>
+        </section>
+      </main>
+    </section>
+
+    <!-- https://github.com/uuidjs/uuid - random id generator library -->
+    <script src="./js/uuidv4.min.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
