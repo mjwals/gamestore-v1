@@ -1,4 +1,4 @@
-# Gamestore-v1
+# Gamestore-v1 (JavaScript)
 An online store for buying and browsing video games.
 
 In 2021, I set out to create a larger project that combined everything I’d learned from earlier JavaScript prototypes. This became a personal challenge to push my skills further, with all interface design created by me in Figma.
